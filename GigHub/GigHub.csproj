@@ -199,9 +199,32 @@
     <Compile Include="Migrations\201709010758070_InitialModel.Designer.cs">
       <DependentUpon>201709010758070_InitialModel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201709011505245_CreateGigTable.cs" />
+    <Compile Include="Migrations\201709011505245_CreateGigTable.Designer.cs">
+      <DependentUpon>201709011505245_CreateGigTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201709011533551_OverrideConventionsForGigsAndGenres.cs" />
+    <Compile Include="Migrations\201709011533551_OverrideConventionsForGigsAndGenres.Designer.cs">
+      <DependentUpon>201709011533551_OverrideConventionsForGigsAndGenres.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201709011548185_FixedAnnotations.cs" />
+    <Compile Include="Migrations\201709011548185_FixedAnnotations.Designer.cs">
+      <DependentUpon>201709011548185_FixedAnnotations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201709011554013_UpdateAnnotations2.cs" />
+    <Compile Include="Migrations\201709011554013_UpdateAnnotations2.Designer.cs">
+      <DependentUpon>201709011554013_UpdateAnnotations2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201709011623502_PopulateGenresTable.cs" />
+    <Compile Include="Migrations\201709011623502_PopulateGenresTable.Designer.cs">
+      <DependentUpon>201709011623502_PopulateGenresTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\ApplicationDbContext.cs" />
+    <Compile Include="Models\Genre.cs" />
+    <Compile Include="Models\Gig.cs" />
+    <Compile Include="Models\ApplicationUser.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -283,6 +306,21 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201709010758070_InitialModel.resx">
       <DependentUpon>201709010758070_InitialModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709011505245_CreateGigTable.resx">
+      <DependentUpon>201709011505245_CreateGigTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709011533551_OverrideConventionsForGigsAndGenres.resx">
+      <DependentUpon>201709011533551_OverrideConventionsForGigsAndGenres.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709011548185_FixedAnnotations.resx">
+      <DependentUpon>201709011548185_FixedAnnotations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709011554013_UpdateAnnotations2.resx">
+      <DependentUpon>201709011554013_UpdateAnnotations2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709011623502_PopulateGenresTable.resx">
+      <DependentUpon>201709011623502_PopulateGenresTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
